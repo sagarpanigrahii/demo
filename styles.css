@@ -1,0 +1,628 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-section {
+  background-image: url('./Images/81f3ff974d82520780078ba1cfbd453a1583259680.webp');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  width: 100%;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  flex-grow: 1;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.search-bar select {
+  border: none;
+  outline: none;
+  padding: 5px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.bottomsection {
+  margin: 50px 80px 80px 80px;
+  
+  }
+  
+  .qs-heading {
+  height: 43px;
+  font-family: poppins;
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal ;
+  font-style: normal;
+  line-height: 1.53;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgb(75, 47, 201);
+  }
+  
+  .qs-subheading {
+  height: 25px;
+  font-family: poppins;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal ;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgb(235, 63, 206);
+  }
+  
+  .qs-boxes-container {
+  margin-top: 30px;
+  }
+  
+  .qs-box {
+  display: inline-block;
+  
+  width: 33%;
+  }
+  
+  .qs-box-contents {
+  height: 160px;
+  box-shadow: 0 3px 6px 0 rgb(75, 47, 201);
+  background-color: antiquewhite;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  position: relative;
+  }
+  
+  .qs-image {
+  width: 160px;
+  height: 160px;
+  margin: 0 29px 0 0;
+  }
+  
+  .qs-item-heading {
+  position: absolute;
+  top: 0px;
+  left: 190px;
+  height: 25px;
+  font-family: poppins;
+  font-size: 18px;
+  font-weight: 600;
+  font-stretch: normal ;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgb(51, 7, 248);
+  }
+  
+  .qs-item-description {
+  position: absolute;
+  top: 50px;
+  left: 190px;
+  max-width: 190px;
+  font-family: poppins;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal ;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgb(12, 12, 12);
+  }
+  
+  @media (max-width: 1136px) {
+  .qs-item-description {
+  max-width: 150px;
+  left: 170px;
+  top: 30px;
+  }
+  
+  .qs-item-heading {
+  left: 170px;
+  }
+  }
+  
+  @media (max-width: 920px) {
+  .qs-box {
+  width: 49.5%;
+  }
+  
+  .qs-item-description {
+  
+  width: 140px;
+  left: 180px;
+  top: 50px;
+  }
+  
+  .qs-item-heading {
+  left: 180px;
+  }
+  }
+
+  nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .nav-logo {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #f01717;
+  }
+  
+  .nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-menu li {
+    margin-left: 1rem;
+  }
+  
+  .nav-menu li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .nav-toggle {
+      display: block;
+      cursor: pointer;
+    }
+  
+    .nav-toggle .bar {
+      width: 25px;
+      height: 3px;
+      margin: 5px;
+      background-color: #fff;
+      transition: all 0.3s ease-in-out;
+    }
+  
+    .nav-menu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .nav-menu.active {
+      display: flex;
+    }
+  
+    .nav-menu li {
+      margin: 0.5rem 0;
+    }
+  }
+
+  
+
+  .hero {
+    background-image: url('./Images/48fc8d7806d6a947fd041a8a1cf83bac1563875757.avif');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.5rem;
+  }
+
+/* Footer styles */
+footer {
+  background-color: #333333;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+}
+
+  /* About section styles */
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+}
+
+.about-content {
+  flex: 1;
+  margin-right: 2rem;
+}
+
+.about-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-image {
+  flex: 1;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333333;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+}
+
+.ad {
+  background-image: url('./Images/zomato-grocery-.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+}
+/* Services section styles */
+
+.ad-content {
+  font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.services {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+}
+
+.service-card {
+  text-align: center;
+  max-width: 300px;
+}
+
+.service-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333333;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+}
+/*Service Section*/
+.services {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+}
+
+.service-card {
+  text-align: center;
+  max-width: 300px;
+}
+
+.service-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+/*Contact Section*/
+.con {
+  background-image: url('./Images/Zomato-Registration.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+}
+
+.contact-form {
+  flex: 1;
+  margin-right: 2rem;
+}
+
+.contact-form h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  padding: 0.5rem 1rem;
+  background-color: #ff7e8b;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #e66879;
+}
+
+.contact-info {
+  flex: 1;
+}
+
+.contact-info h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333333;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+}
+
+.contact-info {
+  flex: 1;
+}
+
+.contact-info h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333333;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+}
+/* Login section styles */
+.log {
+  background-image: url('./Images/logged-out.92482744e1f26a6348f9.png');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+.login {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.login-form {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.login-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form input {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-form button {
+  padding: 0.5rem 1rem;
+  background-color: #ff7e8b;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #e66879;
+}
+
+.login-form p {
+  margin-top: 1rem;
+}
+
+.login-form p a {
+  color: #ff7e8b;
+  text-decoration: none;
+}
+
+.login-form p a:hover {
+  text-decoration: underline;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333333;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+}
+/* Sign Up section styles */
+.sin {
+  background-image: url('./Images/1633141524-5165.avif');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+.signup {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.signup-form {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.signup-form h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.signup-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-form input {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.signup-form button {
+  padding: 0.5rem 1rem;
+  background-color: #ff7e8b;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup-form button:hover {
+  background-color: #e66879;
+}
+
+.signup-form p {
+  margin-top: 1rem;
+}
+
+.signup-form p a {
+  color: #ff7e8b;
+  text-decoration: none;
+}
+
+.signup-form p a:hover {
+  text-decoration: underline;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333333;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+}
